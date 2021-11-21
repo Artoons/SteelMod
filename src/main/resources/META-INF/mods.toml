@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="All rights reserved"
+[[mods]]
+modId="steel"
+version="1.17.1-0.0.1"
+displayName="Steel Mod"
+logoFile="SteelMod.png"
+credits="Tutorials by Kaupenjoe - https://www.youtube.com/channel/UCbzPhyLcO8VP25dZ7kaUyAw"
+authors="Artoons"
+description="Added new metal Steel which has its own added items and an Iron golem "
+
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.examplemod]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[37,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+    versionRange="[1.17.1,1.18)"
+    ordering="NONE"
+    side="BOTH"
